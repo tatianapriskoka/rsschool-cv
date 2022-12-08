@@ -15,7 +15,7 @@
 **About myself:**
 
 I am currently working as financial/managerial accountant.
-A few months ago I became interested in web-development and started to learn
+A few months ago I became interested in Web-development and started to learn
 Frontend development course.
 ***
 
