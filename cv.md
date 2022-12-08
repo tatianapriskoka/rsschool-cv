@@ -2,14 +2,16 @@
 
 **Junior Frontend Developer**
 
-**Contact information:**
 
+**Contact information:**
     City: Minsk, Belarus
     Phone: +375296199760
     E-mail: tatianapriskoka@gmail.com
     Telegram: tatiana_pris
     Github: tatianapriskoka
 ***
+
+
 **About myself:**
 
 I am currently working as financial/managerial accountant.
