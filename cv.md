@@ -26,6 +26,7 @@ Frontend development course.
     Git/Github
     JavaScript (in progress)
 ***
+
 **Education:**
 
        University: Belarus State Economic University’2013, Finance;
