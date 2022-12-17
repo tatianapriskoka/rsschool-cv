@@ -1,5 +1,120 @@
-<header> </header>
+<!DOCTYPE html>
+<html lang="en">
 
-<main>Hello </main>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tatiana Priskoka CV</title>
+    <style>
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+        }
 
-<footer> </footer>
+        .header__nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .head {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .img {
+            max-width: 100%;
+        }
+
+        .head__name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__div"> </div>
+        <nav>
+            <ul class="header__nav">
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li> <a href="#aboutme" class="nav-link">About myself</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a> </li>
+                <li> <a href="#education" class="nav-link">Education</a> </li>
+                <li> <a href="#languages" class="nav-link">Languages</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+
+        <div class="head__foto">
+            <img src="images/photo_cv.small.jpg" alt="my photo">
+        </div>
+        <div class="head__name">
+            <p>Tatiana Priskoka</p>
+            <p>Junior Frontend Developer</p>
+        </div>
+
+
+        <section class="contacts" id="contacts">
+            <h1>Contact information: </h1>
+            <ul>
+                <li>City: Minsk, Belarus</li>
+                <li>Phone: +375296199760</li>
+                <li> E-mail: tatianapriskoka@gmail.com</li>
+                <li>Linkedin:</li>
+                <li>Telegram:</li>
+                <li>Github:</li>
+            </ul>
+        </section>
+        <section class="summury" id="aboutme">
+            <h2>About myself: </h2>
+            <div>I am currently working as financial/managerial accountant.
+                A few months ago I became interested in web-development and started to learn Frontend development
+                course.
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h3>Skills:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS/SASS</li>
+                <li>Git/Github</li>
+                <li>JavaScript (in progress)</li>
+            </ul>
+        </section>
+
+        <section class="education" id="education">
+            <h4>Education: </h4>
+            <div>University: Belarus State Economic University’2013, Finance;
+                Courses:
+                <p>ITGIRLSCHOOL (in process)</p>
+                <p>RS School “JavaScript/Frontend. Stage 0” (in process)</p>
+            </div>
+        </section>
+        <section class="languages" id="languages">
+            <h6>Languages: </h6>
+            <ul>
+                <li>Russian (fluent)</li>
+                <li>Belorussian (fluent)</li>
+                <li> English A2 (B1 in progress)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer"> </footer>
+
+
+</body>
+
+</html>
