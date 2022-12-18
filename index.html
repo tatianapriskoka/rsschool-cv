@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="normalize.css">
     <title>Tatiana Priskoka CV</title>
     <style>
-        .body {
-            padding: 30px;
+        body {
+            padding: 70px;
+            background-color: beige;
         }
 
         .header {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         .header__nav {
@@ -43,6 +44,20 @@
             grid-template-columns: 1fr 1fr;
             justify-content: space-around;
         }
+
+        .title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+
+        .nav {
+            list-style-type: none;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -51,11 +66,11 @@
         <div class="header__div"> </div>
         <nav>
             <ul class="header__nav">
-                <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li> <a href="#aboutme" class="nav-link">About myself</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a> </li>
-                <li> <a href="#education" class="nav-link">Education</a> </li>
-                <li> <a href="#languages" class="nav-link">Languages</a> </li>
+                <li class="nav"><a href="#contacts" class="nav-link">Contacts</a></li>
+                <li class="nav"> <a href="#aboutme" class="nav-link">About myself</a></li>
+                <li class="nav"><a href="#skills" class="nav-link">Skills</a> </li>
+                <li class="nav"> <a href="#education" class="nav-link">Education</a> </li>
+                <li class="nav"> <a href="#languages" class="nav-link">Languages</a> </li>
             </ul>
         </nav>
     </header>
@@ -67,21 +82,18 @@
             <p>Tatiana Priskoka</p>
             <p>Junior Frontend Developer</p>
         </div>
-
-
         <section class="contacts" id="contacts">
             <h1>Contact information: </h1>
             <ul>
                 <li>City: Minsk, Belarus</li>
                 <li>Phone: +375296199760</li>
                 <li> E-mail: tatianapriskoka@gmail.com</li>
-                <li>Linkedin:</li>
-                <li>Telegram:</li>
-                <li>Github:</li>
+                <li>Telegram:tatiana_pris</li>
+                <li>Github:https://github.com/tatianapriskoka</li>
             </ul>
         </section>
         <section class="summury" id="aboutme">
-            <h2>About myself: </h2>
+            <h2 class="title">About myself: </h2>
             <div>I am currently working as financial/managerial accountant.
                 A few months ago I became interested in web-development and started to learn Frontend development
                 course.
@@ -89,7 +101,7 @@
         </section>
 
         <section class="skills" id="skills">
-            <h3>Skills:</h3>
+            <h3 class="title">Skills:</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS/SASS</li>
@@ -99,15 +111,16 @@
         </section>
 
         <section class="education" id="education">
-            <h4>Education: </h4>
-            <div>University: Belarus State Economic University’2013, Finance;
-                Courses:
-                <p>ITGIRLSCHOOL (in process)</p>
+            <h4 class="title">Education: </h4>
+            <div>
+                <p> University: Belarus State Economic University’2013, Finance;</p>
+                <p>Courses:</p>
+                <p> ITGIRLSCHOOL (in process)</p>
                 <p>RS School “JavaScript/Frontend. Stage 0” (in process)</p>
             </div>
         </section>
         <section class="languages" id="languages">
-            <h6>Languages: </h6>
+            <h5 class="title">Languages: </h5>
             <ul>
                 <li>Russian (fluent)</li>
                 <li>Belorussian (fluent)</li>
@@ -118,6 +131,9 @@
 
     <footer class="footer">
         <div><a href="https://github.com/tatianapriskoka">Git</a></div>
+        <div class="footer__logo"> <a href="https://rs.school/js/"><img src="/rsschool-cv/images/rs_school_js.svg"
+                    alt="logo" style="width: 30%;"></a></div>
+        <div> <strong>2022</strong></div>
     </footer>
 
 
