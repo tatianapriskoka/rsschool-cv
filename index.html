@@ -7,25 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+
+        .page {
+            margin: 0 auto;
+            padding: 5vw;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .header__nav {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+
+        .nav-link {
+            font-family: 'Inika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: #010201;
+            text-decoration: none;
+            color: #010201;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #E06733;
+
+        }
+    </style>
 </head>
 
-<body>
+<body class="page">
     <header class="header">
         <div class="header__logo">
             <img src="/images/logo.png">
         </div>
-        <nav class="header__nav">
-            <ul class="navigation">
-                <li>Home</li>
-                <li>About us</li>
-                <li>Service</li>
-                <li>Price</li>
-                <li>Contacts</li>
+        <nav>
+            <ul class="header__nav">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About us</a></li>
+                <li><a href="#service" class="nav-link">Service</a></li>
+                <li><a href="#price" class="nav-link">Price</a></li>
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section></section>
+        <section class="welcome">
+            <div class="welcome__image"></div>
+            <div class="welcome__text">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
         <section></section>
         <section></section>
         <section></section>
