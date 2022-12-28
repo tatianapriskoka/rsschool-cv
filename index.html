@@ -13,11 +13,13 @@
         .page {
             margin: 0 auto;
             padding: 5vw;
+            scroll-behavior: smooth;
         }
 
         .header {
             display: grid;
             grid-template-columns: 1fr 2fr;
+            background-color: #EDF2EC;
         }
 
         .header__nav {
@@ -34,12 +36,106 @@
             color: #010201;
             text-decoration: none;
             color: #010201;
-            text-decoration: none;
         }
 
         a:hover {
             color: #E06733;
+        }
 
+        .welcome {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #EDF2EC;
+            padding: 5px;
+        }
+
+        h1 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 111%;
+            color: #717171;
+        }
+
+        .green {
+            color: #499A18;
+        }
+
+        .welcome-image {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .welcome-text__main {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 175%;
+            /* or 175% */
+            color: #636060;
+        }
+
+        .welcome-text__button {
+            border-radius: 5px;
+            border: 2px solid #E06733;
+            height: 3vw;
+            width: 10vw;
+        }
+
+        .button1 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+            /* or 125% */
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .welcome-text {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #FFFFFF;
+            padding: 15px;
+        }
+
+        .about-text__head {
+            font-family: 'Inika';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 52px;
+            color: #499A18;
+        }
+
+        .orange {
+            color: #E06733;
+        }
+
+        .about-text__main {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            /* or 150% */
+            color: #636060;
+        }
+
+        .about-text {
+            display: grid;
+            grid-template-rows: 1fr 1.5fr;
         }
     </style>
 </head>
@@ -47,7 +143,7 @@
 <body class="page">
     <header class="header">
         <div class="header__logo">
-            <img src="/images/logo.png">
+            <img src="/images/logo.png" alt="logo">
         </div>
         <nav>
             <ul class="header__nav">
@@ -61,14 +157,29 @@
     </header>
     <main>
         <section class="welcome">
-            <div class="welcome__image"></div>
-            <div class="welcome__text">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="welcome-image"> <img src="/images/leafs.png" alt="leafs"></div>
+            <div class="welcome-text">
+                <div>
+                    <h1>We grow <span class="green">plants</span> and give you oxygen</h1>
+                </div>
+                <div class="welcome-text__main">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the
+                    industry' s standard dummy text ever since the 1500s.</div>
+                <button class="welcome-text__button"><a href="#" class="button1">LEARN MORE</a></button>
             </div>
         </section>
-        <section></section>
+        <section class="about">
+            <div class="about-text">
+                <h2 class="about-text__head">We are <span class="orange">professional experienced</span>
+                    gardeners</span></h2>
+                <p class="about-text__main">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. </p>
+            </div>
+            <div class="about-image"><img src="/images/houseplant1.png" alt="leafs"></div>
+        </section>
         <section></section>
         <section></section>
         <section></section>
