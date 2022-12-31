@@ -94,7 +94,8 @@
             display: flex;
             align-items: center;
             color: #000000;
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
 
         .welcome-text {
@@ -146,7 +147,8 @@
             border: 2px solid #E06733;
             height: 3vw;
             width: 10vw;
-            text-align: center;
+            display: flex;
+            justify-content: center;
         }
 
         .service__nav {
@@ -171,11 +173,155 @@
             gap: 5vw;
         }
 
-        .service__block {
+        .service-block {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
             padding: 10px;
+        }
+
+        .service-block__name {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+            /* or 100% */
+            color: #E06733;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-block__text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 125%;
+            /* identical to box height, or 125% */
+            color: #717171;
+            display: flex;
+            justify-content: center;
+        }
+
+        .prices {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #FFFFFF;
+        }
+
+        .prices-contacts {
+            display: grid;
+            justify-content: end;
+            grid-template-rows: 1fr 0.5fr 1fr;
+        }
+
+        .prices-container {
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            gap: 15px;
+        }
+
+        .prices-box {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .prices-container__head {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: #000000;
+        }
+
+        .prices-box__head {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+            /* or 100% */
+            color: #000000;
+        }
+
+        .prices-box__text {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 100%;
+            /* or 100% */
+            color: #717171;
+        }
+
+        .prices-box__price {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 167%;
+            /* or 167% */
+            color: #000000;
+        }
+
+        .price-orange {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 125%;
+            /* or 125% */
+            color: #E06733;
+        }
+
+        .prices-box__button {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 143%;
+            /* or 143% */
+            color: #717171;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .prices-contacts__head {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            /* or 125% */
+            text-align: right;
+            color: #000000;
+        }
+
+        .prices-contacts__button {
+            font-family: 'Inika';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            /* identical to box height */
+            text-align: center;
+            color: #E06733;
+            border-radius: 5px;
+            border: 1.5px solid #E06733;
+            height: 3vw;
+            width: 10vw;
+            margin-left: auto;
+        }
+
+        .prices-contacts__image {
+            margin-left: auto;
         }
     </style>
 </head>
@@ -230,41 +376,76 @@
                 </div>
             </div>
 
-            <div class="service__block">
+            <div class="service-block">
                 <div>
                     <div><img src="/images/first.png" alt="girl with fruit"></div>
-                    <p>Garden care</p>
-                    <p>Lorem Ipsum has been the industry</p>
+                    <p class="service-block__name">Garden care</p>
+                    <p class="service-block__text">Lorem Ipsum has been the industry</p>
                 </div>
                 <div>
                     <div><img src="/images/first_lime.png" alt="lime"></div>
-                    <p>Planting</p>
-                    <p>Lorem Ipsum has been the industry</p>
+                    <p class="service-block__name">Planting</p>
+                    <p class="service-block__text">Lorem Ipsum has been the industry</p>
                 </div>
                 <div>
                     <div><img src="/images/first_pink.png" alt="something pink"></div>
-                    <p>Lawn care</p>
-                    <p>Lorem Ipsum has been the industry</p>
+                    <p class="service-block__name">Lawn care</p>
+                    <p class="service-block__text">Lorem Ipsum has been the industry</p>
                 </div>
                 <div>
                     <div><img src="/images/first_girl.png" alt="girl with flowers"></div>
-                    <p>Planting</p>
-                    <p>Lorem Ipsum has been the industry</p>
+                    <p class="service-block__name">Planting</p>
+                    <p class="service-block__text">Lorem Ipsum has been the industry</p>
                 </div>
                 <div>
                     <div><img src="/images/first_s_plants.png" alt="garden care"></div>
-                    <p>Garden care</p>
-                    <p>Lorem Ipsum has been the industry</p>
+                    <p class="service-block__name">Garden care</p>
+                    <p class="service-block__text">Lorem Ipsum has been the industry</p>
                 </div>
                 <div>
                     <div><img src="/images/first_cactus.png" alt="cactus"></div>
-                    <p>Planting</p>
-                    <p>Lorem Ipsum has been the industry</p>
+                    <p class="service-block__name">Planting</p>
+                    <p class="service-block__text">Lorem Ipsum has been the industry</p>
                 </div>
             </div>
         </section>
+        <section class="prices">
+            <div class="prices-container">
+                <h2 class="prices-container__head">Prices</h2>
+                <div class="prices-box">
+                    <details>
+                        <summary class="prices-box__head">Basics </summary>
+                        <div class="prices-box__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently</div>
+                        <div class="prices-box__price"><span class="price-orange">$25</span> / per hour</div>
+                        <button class="prices-box__button">Order</button>
+                    </details>
+                    <details>
+                        <summary class="prices-box__head">Standard </summary>
+                        <div class="prices-box__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently</div>
+                        <div class="prices-box__price"><span class="price-orange">$25</span> / per hour</div>
+                        <button class="prices-box__button">Order</button>
+                    </details>
+                    <details>
+                        <summary class="prices-box__head">Pro care </summary>
+                        <div class="prices-box__text">Release of Letraset sheets containing Lorem Ipsum passages, and
+                            more recently</div>
+                        <div class="prices-box__price"><span class="price-orange">$25</span> / per hour</div>
+                        <button class="prices-box__button">Order</button>
+                    </details>
 
-        <section></section>
+                </div>
+            </div>
+
+            <div class="prices-contacts">
+                <h3 class="prices-contacts__head">Our best <span class="green">gardeners</span> are ready to help you
+                </h3>
+                <button class="prices-contacts__button">Contact us</button>
+                <div class="prices-contacts__image"><img src="/images/leafs_s.png"></div>
+            </div>
+
+        </section>
         <section></section>
     </main>
     <footer></footer>
