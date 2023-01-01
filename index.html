@@ -12,14 +12,17 @@
 
         .page {
             margin: 0 auto;
-            padding: 5vw;
             scroll-behavior: smooth;
+            width: 1440px;
         }
 
         .header {
             display: grid;
             grid-template-columns: 1fr 2fr;
             background-color: #EDF2EC;
+            height: 134px;
+            padding-left: 100px;
+            padding-right: 100px;
         }
 
         .header__nav {
@@ -46,7 +49,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             background-color: #EDF2EC;
-            padding: 5px;
+            padding-left: 100px;
+            padding-right: 100px;
+            height: 532px;
         }
 
         h1 {
@@ -107,7 +112,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             background-color: #FFFFFF;
-            padding: 15px;
+            padding-left: 100px;
+            padding-right: 100px;
+            height: 666px;
+            gap: 80px;
+
         }
 
         .about-text__head {
@@ -140,6 +149,9 @@
 
         .service {
             background-color: #EDF2EC;
+            padding-left: 100px;
+            padding-right: 100px;
+            height: 1300px;
         }
 
         .service-buttons__button {
@@ -154,7 +166,7 @@
         .service__nav {
             display: grid;
             grid-template-columns: 1fr 2fr;
-            padding: 5vw;
+
         }
 
         .service-head {
@@ -177,7 +189,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 10px;
-            padding: 10px;
         }
 
         .service-block__name {
@@ -208,9 +219,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             justify-content: space-between;
-            padding: 20px;
+            padding-left: 100px;
+            padding-right: 100px;
             background-color: #FFFFFF;
-            padding: 10px;
+            height: 560px;
         }
 
         .prices-contacts {
@@ -338,6 +350,11 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             background-color: #EDF2EC;
+            padding-left: 100px;
+            padding-right: 100px;
+            height: 550px;
+            padding-top: 60px;
+            padding-bottom: -20px;
         }
 
         .contacts__header {
@@ -353,13 +370,44 @@
 
         .contacts-body {
             display: grid;
-
         }
 
         .contacts-body__form {
             display: grid;
             justify-content: center;
             height: 5vw;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: #FFFFFF;
+            width: 1440px;
+            height: 130px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-top: 20px;
+        }
+
+        .footer__text {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer__text,
+        .footer__school {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 250%;
+            /* identical to box height, or 250% */
+            color: #000000;
+        }
+
+        .footer__link {
+            text-decoration: none;
+            color: #000000;
         }
     </style>
 </head>
@@ -492,11 +540,22 @@
                     <input type="city">
                 </form>
             </div>
-
-
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__text">
+            <div>© 2022</div>
+            <div><a class="footer__link" href="https://github.com/tatianapriskoka">github</a>
+            </div>
+        </div>
+        <div class="footer__school"> <a class="footer__link" href="https://rs.school/js/">Rolling Scopes School</a>
+        </div>
+        <div class="footer__logos"> <img src="/images/inst1.png" alt="instagram logo">
+            <img src="/images/fb1.png" alt=" logo facebook">
+            <img src="/images/tw1.png" alt=" logo twitter">
+            <img src="/images/vector.png" alt=" logo pinterest">
+        </div>
+    </footer>
 </body>
 
 </html>
