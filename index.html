@@ -233,8 +233,9 @@
 
         .prices-container {
             display: grid;
-            grid-template-rows: 1fr 2fr;
-            gap: 15px;
+            grid-template-rows: 20% 40%;
+            gap: 110px;
+
         }
 
         .prices-box {
@@ -317,6 +318,16 @@
             color: #000000;
         }
 
+        details>summary {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        details>summary::after {
+            content: url(images/accordion_btn.png);
+            padding-left: 50%;
+        }
+
         .prices-contacts__button {
             font-family: 'Inika';
             font-style: normal;
@@ -338,13 +349,15 @@
         }
 
         .prices-box__container {
-            background-color: #D9D9D9;
+            background-color: #EDF2EC;
             border-radius: 20px;
-            width: 20vw;
+            width: 250px;
+            height: 5vh;
             display: flex;
             padding: 10px;
             justify-content: center;
         }
+
 
         .contacts {
             display: grid;
@@ -428,7 +441,7 @@
         </nav>
     </header>
     <main>
-        <section class="welcome">
+        <section class="welcome" id="home">
             <div class="welcome-image"> <img src="/images/leafs.png" alt="leafs"></div>
             <div class="welcome-text">
                 <div>
@@ -440,7 +453,7 @@
                 <button class="welcome-text__button button1">LEARN MORE</button>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-text">
                 <h2 class="about-text__head">We are <span class="orange">professional experienced</span>
                     gardeners</h2>
@@ -452,7 +465,7 @@
             </div>
             <div class="about-image"><img src="/images/houseplant1.png" alt="leafs"></div>
         </section>
-        <section class="service">
+        <section class="service" id="service">
             <div class="service__nav">
                 <h2 class="service-head">Service and our projects</h2>
                 <div class="service-buttons">
@@ -495,7 +508,7 @@
                 </div>
             </div>
         </section>
-        <section class="prices">
+        <section class="prices" id="price">
             <div class="prices-container">
                 <h2 class="prices-container__head">Prices</h2>
                 <div class="prices-box">
@@ -532,7 +545,7 @@
             </div>
 
         </section>
-        <section class="contacts" id="#contact">
+        <section class="contacts" id="contacts">
             <div><img src="/images/contact_woman1.png"></div>
             <div class="contacts-body">
                 <h2 class="contacts__header">Contact us</h2>
