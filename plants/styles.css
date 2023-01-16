@@ -423,3 +423,71 @@ details>summary::after {
     text-decoration: none;
     color: #000000;
 }
+
+@media (min-width: 381px) and (max-width: 768px) {
+    .page {
+        margin: auto;
+        scroll-behavior: smooth;
+        width: 768px;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        background-color: #EDF2EC;
+        height: 117px;
+        width: 768px;
+    }
+
+    .header__nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        list-style-type: none;
+    }
+
+    .welcome {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #EDF2EC;
+        height: 420px;
+        width: 768px;
+    }
+
+    .welcome-image {
+        order: 2;
+    }
+
+    .welcome-text {
+        order: 1
+    }
+
+    .welcome-text__main {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        /* or 156% */
+        color: #636060;
+    }
+
+    h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 50px;
+        /* or 143% */
+        color: #717171;
+    }
+
+
+    .welcome-image>img {
+        width: 280px;
+        height: 254.15px;
+    }
+
+    .welcome-image {
+        padding-left: 80px;
+    }
+}
