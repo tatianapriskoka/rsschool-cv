@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 .page {
     margin: 0 auto;
-    scroll-behavior: smooth;
     width: 1440px;
 }
 
@@ -161,6 +164,7 @@ h1 {
     width: 10vw;
     display: flex;
     justify-content: center;
+    color: #E06733;
 }
 
 .service__nav {
@@ -541,5 +545,47 @@ details>summary::after {
         grid-template-columns: auto;
     }
 
+    .service {
+        width: 768px;
+        height: 1780px;
+    }
 
+    .service__nav {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .service-head {
+        display: grid;
+        width: 306px;
+        justify-content: left;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+    }
+
+    .service-buttons {
+        display: flex;
+        justify-content: start;
+        margin: 0;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .service-buttons__button {
+        width: 161px;
+        height: 50px;
+        color: #E06733;
+    }
+
+    .service-block {
+        grid-template-columns: repeat(2, 280px);
+        gap: 106px;
+    }
+
+    .service-block__name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
