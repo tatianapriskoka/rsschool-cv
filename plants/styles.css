@@ -490,4 +490,56 @@ details>summary::after {
     .welcome-image {
         padding-left: 80px;
     }
+
+    .welcome-text__button {
+        width: 158px;
+        height: 44px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: auto;
+        width: 768px;
+        height: 783px;
+        margin: 0;
+        gap: 1px;
+    }
+
+    .about-image>img {
+        width: 250px;
+        height: 258px;
+    }
+
+    .about-text__head {
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 46px;
+        text-align: center;
+        padding-left: 172px;
+        padding-right: 172px;
+        padding-bottom: -50px;
+    }
+
+    .about-text__main {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        /* or 150% */
+        color: #636060;
+        padding-bottom: 0px;
+    }
+
+    .about-image {
+        margin-top: -10em;
+        padding-left: 259px;
+        padding-right: 259px;
+        padding-bottom: 95px;
+    }
+
+    .about-text {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
 }
