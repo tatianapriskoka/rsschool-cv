@@ -81,8 +81,8 @@ h1 {
 .welcome-text__button {
     border-radius: 5px;
     border: 2px solid #E06733;
-    height: 3vw;
-    width: 10vw;
+    width: 158px;
+    height: 44px;
 }
 
 .button1 {
@@ -343,8 +343,8 @@ details>summary::after {
     color: #E06733;
     border-radius: 5px;
     border: 1.5px solid #E06733;
-    height: 3vw;
-    width: 10vw;
+    width: 162px;
+    height: 50px;
     margin-left: auto;
 }
 
@@ -587,5 +587,10 @@ details>summary::after {
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
+    }
+
+    .prices {
+        width: 768px;
+        height: 585px;
     }
 }
