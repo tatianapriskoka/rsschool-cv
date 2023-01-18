@@ -395,6 +395,7 @@ details>summary::after {
     border: none;
     font-size: 20px;
     padding-left: 20px;
+    color: #717171;
 }
 
 .footer {
@@ -429,9 +430,12 @@ details>summary::after {
 }
 
 @media (min-width: 381px) and (max-width: 768px) {
-    .page {
-        margin: auto;
+    html {
         scroll-behavior: smooth;
+    }
+
+    .page {
+        margin: 0;
         width: 768px;
     }
 
@@ -592,5 +596,56 @@ details>summary::after {
     .prices {
         width: 768px;
         height: 585px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contacts {
+        display: grid;
+        grid-template-columns: auto;
+        width: 768px;
+        height: 739px;
+        background: cover;
+    }
+
+    .contacts-body {
+        order: 1;
+    }
+
+    .contacts-image {
+        order: 2;
+        padding-left: 294px;
+        padding-right: 274px;
+        padding-bottom: 0px;
+    }
+
+    .contacts-image>img {
+        width: 200px;
+        height: 248.49px;
+    }
+
+    form {
+        width: 450px;
+        height: 50px;
+        padding-left: 159px;
+        padding-right: 159px;
+        padding-top: 191px;
+    }
+
+    .contacts__header {
+        padding-left: 288px;
+        padding-right: 288px;
+        padding-top: 40px;
+    }
+
+    .footer {
+        width: 768px;
+        height: 181px;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 279px;
+        padding-bottom: 279px;
+        padding-top: 33px;
+        padding-bottom: 18px;
     }
 }
