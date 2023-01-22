@@ -833,5 +833,46 @@ details>summary::after {
     .prices {
         width: 382px;
         height: 512px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .prices-container__head {
+        padding-left: 146px;
+        padding-right: 146px;
+    }
+
+    .prices-box {
+        padding-left: 101px;
+        padding-right: 101px;
+        margin-top: -60px;
+    }
+
+    .prices-contacts__head {
+        font-size: 20px;
+        line-height: 35px;
+        margin-right: 79px;
+        margin-left: 79px;
+        justify-self: center;
+    }
+
+    .prices-contacts__button {
+        width: 121px;
+        height: 35px;
+        margin-right: 132px;
+        margin-left: 129px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .prices-contacts__image {
+        display: none;
+    }
+
+    .prices-contacts {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-right: 79px;
+
     }
 }
