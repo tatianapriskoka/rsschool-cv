@@ -9,13 +9,23 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="icon" href="images/favicon.svg">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet">
 </head>
 
 <body class="page">
     <header class="header">
         <div class="header__logo">
             <img src="../plants/images/logo.png" alt="logo">
+            <div class="nav-toggle">
+                <span class="nav-toggle-one"></span>
+                <span class="nav-toggle-two"></span>
+                <span class="nav-toggle-three"></span>
+                <span class="nav-toggle-four"></span>
+            </div>
         </div>
+
         <nav>
             <ul class="header__nav">
                 <li><a href="#home" class="nav-link">Home</a></li>
@@ -25,10 +35,11 @@
                 <li><a href="#contacts" class="nav-link">Contacts</a></li>
             </ul>
         </nav>
+
     </header>
     <main>
         <section class="welcome" id="home">
-            <div class="welcome-image"> <img src="../plants/images/leafs.png" alt="leafs"></div>
+            <div class="welcome-image" id="leafs1"> <img src="../plants/images/leafs.png" alt="leafs"></div>
             <div class="welcome-text">
                 <div>
                     <h1>We grow <span class="green">plants</span> and give you oxygen</h1>
@@ -60,7 +71,6 @@
                     <button class="service-buttons__button button1">Planting</button>
                 </div>
             </div>
-
             <div class="service-block">
                 <div>
                     <div><img src="../plants/images/first.png" alt="girl with fruit"></div>
@@ -119,24 +129,21 @@
                         <div class="prices-box__price"><span class="price-orange">$25</span> / per hour</div>
                         <button class="prices-box__button">Order</button>
                     </details>
-
                 </div>
             </div>
-
             <div class="prices-contacts">
                 <h3 class="prices-contacts__head">Our best <span class="green">gardeners</span> are ready to help you
                 </h3>
                 <button class="prices-contacts__button">Contact us</button>
                 <div class="prices-contacts__image"><img src="../plants/images/leafs_s.png" alt="leaf"></div>
             </div>
-
         </section>
         <section class="contacts" id="contacts">
-            <div><img src="../plants/images/contact_woman1.png" alt="woman"></div>
+            <div class="contacts-image"><img src="../plants/images/contact_woman1.png" alt="woman"></div>
             <div class="contacts-body">
                 <h2 class="contacts__header">Contact us</h2>
                 <form>
-                    <input class="contacts-body__form" type="text">
+                    <input class="contacts-body__form" type="text" value="City">
                 </form>
             </div>
         </section>
