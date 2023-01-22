@@ -658,37 +658,48 @@ details>summary::after {
 
 @media screen and (max-width: 380px) {
     .header {
+        display: grid;
+        grid-template-columns: 1fr;
         width: 380px;
         height: 96px;
+        padding: 25px;
     }
 
     .nav-toggle {
-        float: right;
         width: 40px;
         height: 24px;
-
+        float: right;
+        display: grid;
     }
 
-    .nav-toggle-one {
+    .nav-toggle span {
+        width: 40px;
         height: 8px;
-        border-top: 2px solid #717171;
-        border-bottom: 2px solid #717171;
+        float: right;
+        background-color: #717171;
+        transition: all 0.5s;
+        transform: translate(-50%, -50%);
     }
 
-    .nav-toggle-two {
-        height: 8px;
-        border-bottom: 2px solid #717171;
+    .nav-toggle span:nth-of-type(2) {
+        top: calc(50% - 5px);
     }
 
-    .nav-toggle-three {
-        height: 8px;
-        border-bottom: 2px solid #717171;
+    .nav-toggle span:nth-of-type(3) {
+        top: calc(50% + 5px);
     }
 
     .header__nav {
         max-height: 0;
-        position: absolute;
-        overflow: hidden;
+        position: grid;
+        grid-template-columns: 1fr;
+        display: none;
+    }
+
+    .header__nav.active {
+        display: block;
+        display: flex;
+        padding-left: 2px;
     }
 
     .header__nav li {
@@ -705,6 +716,7 @@ details>summary::after {
         padding-top: 24px;
         padding-bottom: 24px;
         grid-template-columns: 1fr;
+        margin: 0;
     }
 
     .welcome-image {
